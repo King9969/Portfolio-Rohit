@@ -1,6 +1,7 @@
 body {
 	background-color: #2a2a2a;
 	color: #22cf91;
+	
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
 	padding: 2rem;
 	text-align: center;
 }
+
 
 @import url(“https://fonts.googleapis.com/css2?family=Poppins:wght@200;
 
@@ -153,14 +155,16 @@ h5 {
 	background: #202020;
 	color: #22cf91;
 	padding: 0.7rem 3.3rem;
-	border-radius: 5rem;
+	border-radius: 0.5rem;
 	border: #22cf91 solid;
 }
 
 .btn:hover {
 	color: #fff;
-	background-color: #7dcdb0;
+	background-color: #16805e;
 }
+
+
 
 .about-container {
 	display: grid;
@@ -227,7 +231,7 @@ i {
 	text-align: center;
 	flex-wrap: wrap;
 	border: solid;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	animation: colorf 5s ease infinite;
 }
 
@@ -253,7 +257,7 @@ i {
 	text-align: center;
 	flex-wrap: wrap;
 	border: solid;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	animation: colorf 5s ease infinite;
 }
 
@@ -390,7 +394,9 @@ section {
 	h2 {
 		2rem;
 	}
-
+	.con{
+		flex-direction: column;
+	}
 	.project {
 		scale: 0.95;
 	}
@@ -501,11 +507,15 @@ section {
 	}
 }
 
+
 .card {
 	background-color: #2a2a2a;
-	height: 100%;
-	border-radius: 15%;
+	height: 90%;
+	margin: 1rem;
+	width: 15rem;
+	border-radius: 0.5rem;
 	color: #fff;
+	
 }
 
 .card-title {
@@ -578,3 +588,37 @@ footer {
 	color: white;
 }
   
+
+/* Custom cursor */
+.fancyCursor {
+	/* mix-blend-mode: overlay; */
+	display: block;
+	border-radius: 50%;
+	border: 2px solid #22cf91;
+	width: 16px;
+	height: 16px;
+	margin-left: -8px;
+	margin-top: -8px;
+	position: fixed;
+	z-index: 99999999;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+  }
+  body {
+    cursor: none;
+}
+
+
+.project{
+	margin: 1rem;
+	padding: 2rem;
+	
+}
+li{
+	text-align: left;
+}
+.con{
+	display: flex;
+	padding: 0;
+}
